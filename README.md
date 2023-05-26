@@ -1,1 +1,1 @@
-# JS-Challenge-Group3
+# checker.github.io

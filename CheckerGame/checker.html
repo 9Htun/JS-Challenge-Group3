@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CHECKER</title>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Graduate&display=swap" rel="stylesheet">
+</head>
+<body oncli>
+  <div class="chess-board">
+    <div class="row">
+      <div class="cell white-cell" id="8,1"></div>
+      <div class="cell red-cell" id="8,2"><div class="checker black-checker" draggable="true"></div></div>
+      <div class="cell white-cell" id="8,3"></div>
+      <div class="cell red-cell" id="8,4"><div class="checker black-checker" draggable="true"></div></div>
+      <div class="cell white-cell" id="8,5"></div>
+      <div class="cell red-cell" id="8,6"><div class="checker black-checker" draggable="true"></div></div>
+      <div class="cell white-cell" id="8,7"></div>
+      <div class="cell red-cell" id="8,8"><div class="checker black-checker" draggable="true"></div></div>
+    </div>
+    <div class="row">
+      <div class="cell red-cell" id="7,1"><div class="checker black-checker" draggable="true"></div></div>
+      <div class="cell white-cell" id="7,2"></div>
+      <div class="cell red-cell" id="7,3"><div class="checker black-checker" draggable="true"></div></div>
+      <div class="cell white-cell" id="7,4"></div>
+      <div class="cell red-cell" id="7,5"><div class="checker black-checker" draggable="true"></div></div>
+      <div class="cell white-cell" id="7,6"></div>
+      <div class="cell red-cell" id="7,7"><div class="checker black-checker" draggable="true"></div></div>
+      <div class="cell white-cell" id="7,8"></div>
+    </div>
+    <div class="row">
+      <div class="cell white-cell" id="6,1"></div>
+      <div class="cell red-cell" id="6,2"><div class="checker black-checker" draggable="true"></div></div>
+      <div class="cell white-cell" id="6,3"></div>
+      <div class="cell red-cell" id="6,4"><div class="checker black-checker" draggable="true"></div></div>
+      <div class="cell white-cell" id="6,5"></div>
+      <div class="cell red-cell" id="6,6"><div class="checker black-checker" draggable="true"></div></div>
+      <div class="cell white-cell" id="6,7"></div>
+      <div class="cell red-cell" id="6,8"><div class="checker black-checker" draggable="true"></div></div>
+    </div>
+    <div class="row">
+      <div class="cell red-cell" id="5,1"></div>
+      <div class="cell white-cell" id="5,2"></div>
+      <div class="cell red-cell" id="5,3"></div>
+      <div class="cell white-cell" id="5,4"></div>
+      <div class="cell red-cell" id="5,5"></div>
+      <div class="cell white-cell" id="5,6"></div>
+      <div class="cell red-cell" id="5,7"></div>
+      <div class="cell white-cell" id="5,8"></div>
+    </div>
+    <div class="row">
+      <div class="cell white-cell" id="4,1"></div>
+      <div class="cell red-cell" id="4,2"></div>
+      <div class="cell white-cell" id="4,3"></div>
+      <div class="cell red-cell" id="4,4"></div>
+      <div class="cell white-cell" id="4,5"></div>
+      <div class="cell red-cell" id="4,6"></div>
+      <div class="cell white-cell" id="4,7"></div>
+      <div class="cell red-cell" id="4,8"></div>
+    </div>
+    <div class="row">
+      <div class="cell red-cell" id="3,1"><div class="checker white-checker" draggable="true"></div></div>
+      <div class="cell white-cell" id="3,2"></div>
+      <div class="cell red-cell" id="3,3"><div class="checker white-checker" draggable="true"></div></div>
+      <div class="cell white-cell" id="3,4"></div>
+      <div class="cell red-cell" id="3,5"><div class="checker white-checker" draggable="true"></div></div>
+      <div class="cell white-cell" id="3,6"></div>
+      <div class="cell red-cell" id="3,7"><div class="checker white-checker" draggable="true"></div></div>
+      <div class="cell white-cell" id="3,8"></div>
+    </div>
+    <div class="row">
+      <div class="cell white-cell" id="2,1"></div>
+      <div class="cell red-cell" id="2,2"><div class="checker white-checker" draggable="true"></div></div>
+      <div class="cell white-cell" id="2,3"></div>
+      <div class="cell red-cell" id="2,4"><div class="checker white-checker" draggable="true"></div></div>
+      <div class="cell white-cell" id="2,5"></div>
+      <div class="cell red-cell" id="2,6"><div class="checker white-checker" draggable="true"></div></div>
+      <div class="cell white-cell" id="2,7"></div>
+      <div class="cell red-cell" id="2,8"><div class="checker white-checker" draggable="true"></div></div>
+    </div>
+    <div class="row">
+      <div class="cell red-cell" id="1,1"><div class="checker white-checker" draggable="true"></div></div>
+      <div class="cell white-cell" id="1,2"></div>
+      <div class="cell red-cell" id="1,3"><div class="checker white-checker" draggable="true"></div></div>
+      <div class="cell white-cell" id="1,4"></div>
+      <div class="cell red-cell" id="1,5"><div class="checker white-checker" draggable="true"></div></div>
+      <div class="cell white-cell" id="1,6"></div>
+      <div class="cell red-cell" id="1,7"><div class="checker white-checker" draggable="true"></div></div>
+      <div class="cell white-cell" id="1,8"></div>
+    </div>
+  </div> 
+  <div class="info">
+    <div class="p2 Score">0</div>
+    <div id="turn">
+      <div id="title">PLAYER TURN</div>
+      <div class="turn"> WHITE!</div>
+    </div>
+    <div class="p1 Score">0</div>
+  </div>
+  
+  <div class="declare">
+    <p class="winner">Player One Wins!</p>
+    <div class="choice">
+      <a href="" id="playAgain"><div class="playAgain">Play again</div></a>
+      <a href="../src/home.html" id="exitLink"><div class="exit">Exit</div></a>
+    </div>
+  </div>
+  
+  <div class="mainMenu">
+    <p class="header">GAME MODE</p>
+      <div class="people">
+          <img src="../img/human.png" alt="..." width="30px" height="30px">
+          <p class="vs">VS</p>
+          <img src="../img/human.png" alt="..." width="30px" height="30px">
+      </div>
+      <div class="computer">
+          <img src="../img/human.png" alt="..." width="30px" height="30px">
+          <p class="vs">VS</p>
+          <img src="../img/robot.png" alt="..." width="37px" height="37px">
+      </div>
+      <h2 id="theme">Customize Theme</h2>
+      <div class="container">
+        <div class="sample sunset"></div>
+        <div class="sample blueMount"></div>
+        <div class="sample wood"></div>
+      </div>
+      <div>
+        <a href="../src/home.html"><p class="back">BACK TO MENU</p></a>
+      </div>
+</div>
+
+
+<audio src="../audios/rclick-13693.mp3" id="dropAudio"></audio>
+<audio src="../audios/click-for-game-menu-131903.mp3" id="menuAudio"></audio>
+<audio src="../audios/game-level-complete-143022.mp3" id="gameWin"></audio>
+  <script src="./script.js"></script>
+</body>
+</html>
